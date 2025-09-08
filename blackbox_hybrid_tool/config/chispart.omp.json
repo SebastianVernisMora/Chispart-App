@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "secondary_prompt": {
+    "template": "❯❯ ",
+    "foreground": "#f472b6",
+    "background": "transparent"
+  },
+  "transient_prompt": {
+    "template": "❯ ",
+    "foreground": "#f472b6",
+    "background": "transparent"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "text": " ✨ CHISPART AI "
+          },
+          "foreground": "#FFFFFF",
+          "background": "#f472b6",
+          "type": "text",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "enable_hyperlink": false,
+            "folder_separator_icon": "/",
+            "home_icon": "~",
+            "max_depth": 3,
+            "style": "folder"
+          },
+          "foreground": "#111827",
+          "background": "#34D399",
+          "type": "path",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "branch_icon": "\ue0a0 ",
+            "cache_duration": "none",
+            "display_staged": true,
+            "display_stash_count": true,
+            "display_status": true,
+            "display_upstream_icon": true,
+            "fetch_status": false,
+            "template": " {{ .HEAD }}{{ if .Working.Changed }} ✚{{ end }}{{ if .Staging.Changed }} \u25cf{{ end }}{{ if .Ahead }} \u21e1{{ end }}{{ if .Behind }} \u21e3{{ end }}"
+          },
+          "foreground": "#111827",
+          "background": "#F59E0B",
+          "type": "git",
+          "style": "powerline"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "time_format": "15:04"
+          },
+          "foreground": "#9CA3AF",
+          "type": "time",
+          "style": "plain"
+        }
+      ]
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}

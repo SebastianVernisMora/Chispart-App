@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  blackbox-hybrid-tool:
+    build: .
+    container_name: ${APP_SLUG:-blackbox-hybrid-tool}
+    ports:
+      - "8005:8000"
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+      - ./blackbox_hybrid_tool/config:/app/blackbox_hybrid_tool/config
+    environment:
+      - LOG_LEVEL=INFO
+      - CONFIG_FILE=blackbox_hybrid_tool/config/models.json
+      - PYTHONPATH=/app
+      - APP_NAME=${APP_NAME:-Blackbox Hybrid Tool}
+      - APP_TAGLINE=${APP_TAGLINE:-API para herramienta híbrida de modelos AI}
+      - APP_VERSION=${APP_VERSION:-1.0.0}
+    env_file:
+      - .env
+    command: ["python", "main.py"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Servicio opcional para desarrollo con hot reload
+  dev:
+    build: .
+    container_name: ${APP_SLUG:-blackbox-hybrid-tool}-dev
+    ports:
+      - "8006:8000"
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+      - ./blackbox_hybrid_tool/config:/app/blackbox_hybrid_tool/config
+    environment:
+      - LOG_LEVEL=DEBUG
+      - CONFIG_FILE=blackbox_hybrid_tool/config/models.json
+      - PYTHONPATH=/app
+      - APP_NAME=${APP_NAME:-Blackbox Hybrid Tool}
+      - APP_TAGLINE=${APP_TAGLINE:-API para herramienta híbrida de modelos AI}
+      - APP_VERSION=${APP_VERSION:-1.0.0}
+    env_file:
+      - .env
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    profiles:
+      - dev

@@ -1,0 +1,1540 @@
+{
+  "default_model": "auto",
+  "models": {
+    "blackbox": {
+      "enabled": true,
+      "model": "blackboxai/openai/o1",
+      "base_url": "https://api.blackbox.ai/chat/completions"
+    }
+  },
+  "testing": {
+    "default_language": "python",
+    "test_frameworks": {
+      "python": "pytest",
+      "javascript": "jest",
+      "java": "junit",
+      "go": "testing"
+    },
+    "coverage_threshold": 80.0
+  },
+  "available_models": [
+    {
+      "model": "blackboxai/google/gemma-3-27b-it",
+      "context": "16K tokens",
+      "input_cost": "0.09",
+      "output_cost": "0.17"
+    },
+    {
+      "model": "blackboxai/aion-labs/aion-rp-llama-3.1-8b",
+      "context": "33K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.20"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4-turbo",
+      "context": "4K tokens",
+      "input_cost": "10.00",
+      "output_cost": "30.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-235b-a22b:free",
+      "context": "41K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/x-ai/grok-3-mini",
+      "context": "131K tokens",
+      "input_cost": "0.30",
+      "output_cost": "0.50"
+    },
+    {
+      "model": "blackboxai/openai/chatgpt-4o-latest",
+      "context": "16K tokens",
+      "input_cost": "5.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/tngtech/deepseek-r1t-chimera:free",
+      "context": "164K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4-0314",
+      "context": "4K tokens",
+      "input_cost": "30.00",
+      "output_cost": "60.00"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-flash-preview-05-20",
+      "context": "66K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-3-mini-128k-instruct",
+      "context": "128K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/abiruyt/text-extract-ocr",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/shisa-ai/shisa-v2-llama3.3-70b:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/opengvlab/internvl3-2b",
+      "context": "12K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-flash-preview",
+      "context": "66K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/qwen/qwen2.5-vl-72b-instruct:free",
+      "context": "2K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4.1",
+      "context": "33K tokens",
+      "input_cost": "2.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/microsoft/mai-ds-r1:free",
+      "context": "164K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/perplexity/sonar-reasoning-pro",
+      "context": "128K tokens",
+      "input_cost": "2.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/daanelson/real-esrgan-a100",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/alpindale/goliath-120b",
+      "context": "6K tokens",
+      "input_cost": "9.00",
+      "output_cost": "11.00"
+    },
+    {
+      "model": "blackboxai/arcee-ai/arcee-blitz",
+      "context": "33K tokens",
+      "input_cost": "0.45",
+      "output_cost": "0.75"
+    },
+    {
+      "model": "blackboxai/openai/o3-mini-high",
+      "context": "100K tokens",
+      "input_cost": "1.10",
+      "output_cost": "4.40"
+    },
+    {
+      "model": "blackboxai/mistralai/magistral-medium-2506:thinking",
+      "context": "40K tokens",
+      "input_cost": "2.00",
+      "output_cost": "5.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mixtral-8x7b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.08",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-0528",
+      "context": "33K tokens",
+      "input_cost": "0.50",
+      "output_cost": "2.15"
+    },
+    {
+      "model": "blackboxai/openai/o3",
+      "context": "100K tokens",
+      "input_cost": "2.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/andreasjansson/blip-2",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/all-hands/openhands-lm-32b-v0.1",
+      "context": "4K tokens",
+      "input_cost": "2.60",
+      "output_cost": "3.40"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-pro-preview",
+      "context": "66K tokens",
+      "input_cost": "1.25",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-guard-4-12b",
+      "context": "164K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.05"
+    },
+    {
+      "model": "blackboxai/sczhou/codeformer",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/adirik/grounding-dino",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o-2024-08-06",
+      "context": "16K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-sonnet:beta",
+      "context": "8K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-pro-exp-03-25",
+      "context": "66K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.1-70b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.28"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-2",
+      "context": "4K tokens",
+      "input_cost": "8.00",
+      "output_cost": "24.00"
+    },
+    {
+      "model": "blackboxai/openai/o1",
+      "context": "100K tokens",
+      "input_cost": "15.00",
+      "output_cost": "60.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-7b-instruct-v0.1",
+      "context": "3K tokens",
+      "input_cost": "0.11",
+      "output_cost": "0.19"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-14b",
+      "context": "41K tokens",
+      "input_cost": "0.06",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/openai/o1-mini-2024-09-12",
+      "context": "66K tokens",
+      "input_cost": "1.10",
+      "output_cost": "4.40"
+    },
+    {
+      "model": "blackboxai/xinntao/gfpgan",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/meta/meta-llama-3-8b-instruct",
+      "context": "4K tokens",
+      "input_cost": "50.00",
+      "output_cost": "500.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-0528-qwen3-8b",
+      "context": "32K tokens",
+      "input_cost": "0.01",
+      "output_cost": "0.02"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-haiku",
+      "context": "8K tokens",
+      "input_cost": "0.80",
+      "output_cost": "4.00"
+    },
+    {
+      "model": "blackboxai/neversleep/llama-3.1-lumimaid-70b",
+      "context": "2K tokens",
+      "input_cost": "2.50",
+      "output_cost": "3.00"
+    },
+    {
+      "model": "blackboxai/anthracite-org/magnum-v4-72b",
+      "context": "1K tokens",
+      "input_cost": "2.50",
+      "output_cost": "3.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.2-90b-vision-instruct",
+      "context": "2K tokens",
+      "input_cost": "1.20",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/cohere/command-r-plus-04-2024",
+      "context": "4K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1:free",
+      "context": "164K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4.1-nano",
+      "context": "33K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/minimax/minimax-01",
+      "context": "1000K tokens",
+      "input_cost": "0.20",
+      "output_cost": "1.10"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-flash",
+      "context": "66K tokens",
+      "input_cost": "0.30",
+      "output_cost": "2.50"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3-opus",
+      "context": "4K tokens",
+      "input_cost": "15.00",
+      "output_cost": "75.00"
+    },
+    {
+      "model": "blackboxai/arcee-ai/virtuoso-medium-v2",
+      "context": "33K tokens",
+      "input_cost": "0.50",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/moonshotai/kimi-dev-72b:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen2.5-vl-32b-instruct",
+      "context": "128K tokens",
+      "input_cost": "0.90",
+      "output_cost": "0.90"
+    },
+    {
+      "model": "blackboxai/google/gemma-3n-e4b-it:free",
+      "context": "2K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "context": "131K tokens",
+      "input_cost": "0.60",
+      "output_cost": "1.80"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-large",
+      "context": "32K tokens",
+      "input_cost": "2.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.2-11b-vision-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.05"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-chat-v3-0324",
+      "context": "8K tokens",
+      "input_cost": "0.28",
+      "output_cost": "0.88"
+    },
+    {
+      "model": "blackboxai/openai/o4-mini",
+      "context": "100K tokens",
+      "input_cost": "1.10",
+      "output_cost": "4.40"
+    },
+    {
+      "model": "blackboxai/inflection/inflection-3-pi",
+      "context": "1K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4-turbo-preview",
+      "context": "4K tokens",
+      "input_cost": "10.00",
+      "output_cost": "30.00"
+    },
+    {
+      "model": "blackboxai/nothingiisreal/mn-celeste-12b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/inception/mercury",
+      "context": "16K tokens",
+      "input_cost": "0.25",
+      "output_cost": "1.00"
+    },
+    {
+      "model": "blackboxai/jagilley/controlnet-scribble",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/thedrummer/unslopnemo-12b",
+      "context": "33K tokens",
+      "input_cost": "0.40",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/sao10k/l3.3-euryale-70b",
+      "context": "131K tokens",
+      "input_cost": "0.65",
+      "output_cost": "0.75"
+    },
+    {
+      "model": "blackboxai/neversleep/llama-3-lumimaid-8b",
+      "context": "2K tokens",
+      "input_cost": "0.20",
+      "output_cost": "1.25"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-2.5-vl-7b-instruct",
+      "context": "33K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.20"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.0-flash-lite-001",
+      "context": "8K tokens",
+      "input_cost": "0.07",
+      "output_cost": "0.30"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-sonnet",
+      "context": "8K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/google/gemma-2-9b-it:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-small-24b-instruct-2501",
+      "context": "33K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.09"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-sonnet-20240620:beta",
+      "context": "8K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-large-2407",
+      "context": "131K tokens",
+      "input_cost": "2.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/raifle/sorcererlm-8x22b",
+      "context": "16K tokens",
+      "input_cost": "4.50",
+      "output_cost": "4.50"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-7b-instruct:free",
+      "context": "16K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/cohere/command-r-plus",
+      "context": "4K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/vaibhavs10/incredibly-fast-whisper",
+      "context": "4K tokens",
+      "input_cost": "50.00",
+      "output_cost": "500.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-distill-llama-8b",
+      "context": "32K tokens",
+      "input_cost": "0.04",
+      "output_cost": "0.04"
+    },
+    {
+      "model": "blackboxai/mistralai/pixtral-large-2411",
+      "context": "131K tokens",
+      "input_cost": "2.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.7-sonnet:thinking",
+      "context": "64K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/google/gemma-3-4b-it",
+      "context": "131K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.04"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3-opus:beta",
+      "context": "4K tokens",
+      "input_cost": "15.00",
+      "output_cost": "75.00"
+    },
+    {
+      "model": "blackboxai/google/gemma-2-27b-it",
+      "context": "2K tokens",
+      "input_cost": "0.80",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.0-flash-exp:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-sonnet-4",
+      "context": "64K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-2.0",
+      "context": "4K tokens",
+      "input_cost": "8.00",
+      "output_cost": "24.00"
+    },
+    {
+      "model": "blackboxai/salesforce/blip",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.2-1b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.01",
+      "output_cost": "0.01"
+    },
+    {
+      "model": "blackboxai/cohere/command",
+      "context": "4K tokens",
+      "input_cost": "1.00",
+      "output_cost": "2.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-large-2411",
+      "context": "131K tokens",
+      "input_cost": "2.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/google/gemini-flash-1.5-8b",
+      "context": "8K tokens",
+      "input_cost": "0.04",
+      "output_cost": "0.15"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-sonnet-20240620",
+      "context": "8K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-distill-qwen-32b",
+      "context": "16K tokens",
+      "input_cost": "0.07",
+      "output_cost": "0.15"
+    },
+    {
+      "model": "blackboxai/thudm/glm-z1-rumination-32b",
+      "context": "32K tokens",
+      "input_cost": "0.24",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-4-multimodal-instruct",
+      "context": "131K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-medium-3",
+      "context": "131K tokens",
+      "input_cost": "0.40",
+      "output_cost": "2.00"
+    },
+    {
+      "model": "blackboxai/google/gemma-2-9b-it",
+      "context": "8K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.20"
+    },
+    {
+      "model": "blackboxai/moonshotai/kimi-vl-a3b-thinking:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-2-72b-instruct",
+      "context": "4K tokens",
+      "input_cost": "0.90",
+      "output_cost": "0.90"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-saba",
+      "context": "33K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/google/gemma-3-12b-it:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-235b-a22b",
+      "context": "41K tokens",
+      "input_cost": "0.13",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o-2024-11-20",
+      "context": "16K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4.1-mini",
+      "context": "33K tokens",
+      "input_cost": "0.40",
+      "output_cost": "1.60"
+    },
+    {
+      "model": "blackboxai/liquid/lfm-3b",
+      "context": "33K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.02"
+    },
+    {
+      "model": "blackboxai/nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
+      "context": "2K tokens",
+      "input_cost": "0.60",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/krthr/clip-embeddings",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/meta/meta-llama-3-70b-instruct",
+      "context": "4K tokens",
+      "input_cost": "50.00",
+      "output_cost": "500.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-2.5-7b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.04",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/black-forest-labs/flux-kontext-pro",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/eva-unit-01/eva-llama-3.33-70b",
+      "context": "4K tokens",
+      "input_cost": "4.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-3.5-turbo-16k",
+      "context": "4K tokens",
+      "input_cost": "3.00",
+      "output_cost": "4.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-8b",
+      "context": "20K tokens",
+      "input_cost": "0.04",
+      "output_cost": "0.14"
+    },
+    {
+      "model": "blackboxai/arcee-ai/virtuoso-large",
+      "context": "64K tokens",
+      "input_cost": "0.75",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/openai/gpt-3.5-turbo-instruct",
+      "context": "4K tokens",
+      "input_cost": "1.50",
+      "output_cost": "2.00"
+    },
+    {
+      "model": "blackboxai/meta/meta-llama-3-8b",
+      "context": "4K tokens",
+      "input_cost": "50.00",
+      "output_cost": "500.00"
+    },
+    {
+      "model": "blackboxai/cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/thedrummer/anubis-pro-105b-v1",
+      "context": "131K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.00"
+    },
+    {
+      "model": "blackboxai/inflection/inflection-3-productivity",
+      "context": "1K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/alpindale/magnum-72b",
+      "context": "4K tokens",
+      "input_cost": "4.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/google/gemini-flash-1.5",
+      "context": "8K tokens",
+      "input_cost": "0.07",
+      "output_cost": "0.30"
+    },
+    {
+      "model": "blackboxai/eva-unit-01/eva-qwen-2.5-72b",
+      "context": "4K tokens",
+      "input_cost": "4.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/neversleep/llama-3-lumimaid-70b",
+      "context": "4K tokens",
+      "input_cost": "4.00",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3-haiku",
+      "context": "4K tokens",
+      "input_cost": "0.25",
+      "output_cost": "1.25"
+    },
+    {
+      "model": "blackboxai/agentica-org/deepcoder-14b-preview:free",
+      "context": "96K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/arcee-ai/maestro-reasoning",
+      "context": "32K tokens",
+      "input_cost": "0.90",
+      "output_cost": "3.30"
+    },
+    {
+      "model": "blackboxai/thudm/glm-z1-32b:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/google/gemma-3-12b-it",
+      "context": "131K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/google/veo-3-fast",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-4",
+      "context": "16K tokens",
+      "input_cost": "0.07",
+      "output_cost": "0.14"
+    },
+    {
+      "model": "blackboxai/black-forest-labs/flux-schnell",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/mancer/weaver",
+      "context": "1K tokens",
+      "input_cost": "1.50",
+      "output_cost": "1.50"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-plus",
+      "context": "8K tokens",
+      "input_cost": "0.40",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/ai21/jamba-1.6-mini",
+      "context": "4K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.2-3b-instruct",
+      "context": "20K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.01"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-7b-instruct-v0.2",
+      "context": "33K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.20"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-vl-max",
+      "context": "2K tokens",
+      "input_cost": "0.80",
+      "output_cost": "3.20"
+    },
+    {
+      "model": "blackboxai/nousresearch/deephermes-3-llama-3-8b-preview:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.2-11b-vision-instruct:free",
+      "context": "2K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/cohere/command-r-08-2024",
+      "context": "4K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-2.5-72b-instruct:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/google/gemini-pro-1.5",
+      "context": "8K tokens",
+      "input_cost": "1.25",
+      "output_cost": "5.00"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-3.5-mini-128k-instruct",
+      "context": "128K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-3-medium-128k-instruct",
+      "context": "128K tokens",
+      "input_cost": "1.00",
+      "output_cost": "1.00"
+    },
+    {
+      "model": "blackboxai/thudm/glm-z1-32b",
+      "context": "32K tokens",
+      "input_cost": "0.24",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/sao10k/l3-euryale-70b",
+      "context": "8K tokens",
+      "input_cost": "1.48",
+      "output_cost": "1.48"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-small-3.2-24b-instruct",
+      "context": "32K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3-8b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.03",
+      "output_cost": "0.06"
+    },
+    {
+      "model": "blackboxai/opengvlab/internvl3-14b",
+      "context": "12K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/mistralai/codestral-2501",
+      "context": "262K tokens",
+      "input_cost": "0.30",
+      "output_cost": "0.90"
+    },
+    {
+      "model": "blackboxai/openrouter/cypher-alpha:free",
+      "context": "10K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/sophosympatheia/midnight-rose-70b",
+      "context": "2K tokens",
+      "input_cost": "0.80",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/google/veo-2",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/undi95/toppy-m-7b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-4-maverick",
+      "context": "16K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.1-8b-instruct",
+      "context": "131K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.02"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3-70b-instruct",
+      "context": "16K tokens",
+      "input_cost": "0.30",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o-mini",
+      "context": "16K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/perplexity/r1-1776",
+      "context": "128K tokens",
+      "input_cost": "2.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/black-forest-labs/flux-dev",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.1-405b",
+      "context": "33K tokens",
+      "input_cost": "2.00",
+      "output_cost": "2.00"
+    },
+    {
+      "model": "blackboxai/nousresearch/hermes-2-pro-llama-3-8b",
+      "context": "131K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.04"
+    },
+    {
+      "model": "blackboxai/microsoft/wizardlm-2-8x22b",
+      "context": "66K tokens",
+      "input_cost": "0.48",
+      "output_cost": "0.48"
+    },
+    {
+      "model": "blackboxai/nvidia/llama-3.1-nemotron-70b-instruct",
+      "context": "131K tokens",
+      "input_cost": "0.12",
+      "output_cost": "0.30"
+    },
+    {
+      "model": "blackboxai/aion-labs/aion-1.0-mini",
+      "context": "33K tokens",
+      "input_cost": "0.70",
+      "output_cost": "1.40"
+    },
+    {
+      "model": "blackboxai/google/gemini-2.5-flash-preview:thinking",
+      "context": "66K tokens",
+      "input_cost": "0.15",
+      "output_cost": "3.50"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-tiny",
+      "context": "33K tokens",
+      "input_cost": "0.25",
+      "output_cost": "0.25"
+    },
+    {
+      "model": "blackboxai/microsoft/phi-4-reasoning-plus",
+      "context": "33K tokens",
+      "input_cost": "0.07",
+      "output_cost": "0.35"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-4-scout:free",
+      "context": "64K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/prompthero/openjourney",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/arliai/qwq-32b-arliai-rpr-v1:free",
+      "context": "33K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/allenhooo/lama",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/arcee-ai/spotlight",
+      "context": "66K tokens",
+      "input_cost": "0.18",
+      "output_cost": "0.18"
+    },
+    {
+      "model": "blackboxai/google/gemma-3-27b-it:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-8b:free",
+      "context": "41K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o",
+      "context": "16K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-distill-qwen-14b",
+      "context": "32K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.15"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-vl-plus",
+      "context": "2K tokens",
+      "input_cost": "0.21",
+      "output_cost": "0.63"
+    },
+    {
+      "model": "blackboxai/perplexity/sonar-reasoning",
+      "context": "128K tokens",
+      "input_cost": "1.00",
+      "output_cost": "5.00"
+    },
+    {
+      "model": "blackboxai/falcons-ai/nsfw_image_detection",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/bytedance/sdxl-lightning-4step",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/cohere/command-r-03-2024",
+      "context": "4K tokens",
+      "input_cost": "0.50",
+      "output_cost": "1.50"
+    },
+    {
+      "model": "blackboxai/jaaari/kokoro-82m",
+      "context": "4K tokens",
+      "input_cost": "NaN",
+      "output_cost": "380.00"
+    },
+    {
+      "model": "blackboxai/qwen/qwen-turbo",
+      "context": "8K tokens",
+      "input_cost": "0.05",
+      "output_cost": "0.20"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o-mini-2024-07-18",
+      "context": "16K tokens",
+      "input_cost": "0.15",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/stability-ai/sdxl",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/thudm/glm-4-32b",
+      "context": "32K tokens",
+      "input_cost": "0.24",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/mistralai/pixtral-12b",
+      "context": "33K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.10"
+    },
+    {
+      "model": "blackboxai/perplexity/sonar-pro",
+      "context": "8K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/cohere/command-r7b-12-2024",
+      "context": "4K tokens",
+      "input_cost": "0.04",
+      "output_cost": "0.15"
+    },
+    {
+      "model": "blackboxai/cognitivecomputations/dolphin-mixtral-8x22b",
+      "context": "8K tokens",
+      "input_cost": "0.90",
+      "output_cost": "0.90"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-distill-llama-70b",
+      "context": "16K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.40"
+    },
+    {
+      "model": "blackboxai/openai/codex-mini",
+      "context": "100K tokens",
+      "input_cost": "1.50",
+      "output_cost": "6.00"
+    },
+    {
+      "model": "blackboxai/mistralai/devstral-small",
+      "context": "128K tokens",
+      "input_cost": "0.06",
+      "output_cost": "0.12"
+    },
+    {
+      "model": "blackboxai/qwen/qwen2.5-vl-72b-instruct",
+      "context": "32K tokens",
+      "input_cost": "0.25",
+      "output_cost": "0.75"
+    },
+    {
+      "model": "blackboxai/sao10k/l3.1-euryale-70b",
+      "context": "33K tokens",
+      "input_cost": "0.65",
+      "output_cost": "0.75"
+    },
+    {
+      "model": "blackboxai/perplexity/sonar",
+      "context": "128K tokens",
+      "input_cost": "1.00",
+      "output_cost": "1.00"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-2:beta",
+      "context": "4K tokens",
+      "input_cost": "8.00",
+      "output_cost": "24.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-4-scout",
+      "context": "1049K tokens",
+      "input_cost": "0.08",
+      "output_cost": "0.30"
+    },
+    {
+      "model": "blackboxai/amazon/nova-pro-v1",
+      "context": "5K tokens",
+      "input_cost": "0.80",
+      "output_cost": "3.20"
+    },
+    {
+      "model": "blackboxai/nousresearch/hermes-3-llama-3.1-70b",
+      "context": "131K tokens",
+      "input_cost": "0.10",
+      "output_cost": "0.28"
+    },
+    {
+      "model": "blackboxai/undi95/remm-slerp-l2-13b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-small",
+      "context": "33K tokens",
+      "input_cost": "0.20",
+      "output_cost": "0.60"
+    },
+    {
+      "model": "blackboxai/qwen/qwen2.5-vl-32b-instruct:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/inception/mercury-coder",
+      "context": "32K tokens",
+      "input_cost": "0.25",
+      "output_cost": "1.00"
+    },
+    {
+      "model": "blackboxai/x-ai/grok-2-1212",
+      "context": "131K tokens",
+      "input_cost": "2.00",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/perplexity/sonar-deep-research",
+      "context": "128K tokens",
+      "input_cost": "2.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/openai/o3-pro",
+      "context": "100K tokens",
+      "input_cost": "20.00",
+      "output_cost": "80.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-4-maverick:free",
+      "context": "128K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-chat",
+      "context": "164K tokens",
+      "input_cost": "0.38",
+      "output_cost": "0.89"
+    },
+    {
+      "model": "blackboxai/pygmalionai/mythalion-13b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/beautyyuyanli/multilingual-e5-large",
+      "context": "4K tokens",
+      "input_cost": "50.00",
+      "output_cost": "500.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4.5-preview",
+      "context": "16K tokens",
+      "input_cost": "75.00",
+      "output_cost": "150.00"
+    },
+    {
+      "model": "blackboxai/nvidia/llama-3.3-nemotron-super-49b-v1:free",
+      "context": "131K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4o-search-preview",
+      "context": "16K tokens",
+      "input_cost": "2.50",
+      "output_cost": "10.00"
+    },
+    {
+      "model": "blackboxai/thedrummer/valkyrie-49b-v1",
+      "context": "131K tokens",
+      "input_cost": "0.50",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/nousresearch/hermes-3-llama-3.1-405b",
+      "context": "16K tokens",
+      "input_cost": "0.70",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/01-ai/yi-large",
+      "context": "4K tokens",
+      "input_cost": "3.00",
+      "output_cost": "3.00"
+    },
+    {
+      "model": "blackboxai/mistralai/mistral-7b-instruct-v0.3",
+      "context": "16K tokens",
+      "input_cost": "0.03",
+      "output_cost": "0.05"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3.5-haiku-20241022:beta",
+      "context": "8K tokens",
+      "input_cost": "0.80",
+      "output_cost": "4.00"
+    },
+    {
+      "model": "blackboxai/morph/morph-v2",
+      "context": "16K tokens",
+      "input_cost": "1.20",
+      "output_cost": "2.70"
+    },
+    {
+      "model": "blackboxai/qwen/qwen3-32b:free",
+      "context": "41K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/bytedance/hyper-flux-8step",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/mistralai/mixtral-8x22b-instruct",
+      "context": "66K tokens",
+      "input_cost": "0.90",
+      "output_cost": "0.90"
+    },
+    {
+      "model": "blackboxai/alfredpros/codellama-7b-instruct-solidity",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/google/gemma-3n-e4b-it",
+      "context": "33K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.04"
+    },
+    {
+      "model": "blackboxai/black-forest-labs/flux-pro",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/openai/gpt-4",
+      "context": "4K tokens",
+      "input_cost": "30.00",
+      "output_cost": "60.00"
+    },
+    {
+      "model": "blackboxai/black-forest-labs/flux-1.1-pro-ultra",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/arcee-ai/coder-large",
+      "context": "33K tokens",
+      "input_cost": "0.50",
+      "output_cost": "0.80"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-r1-distill-llama-70b:free",
+      "context": "4K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/x-ai/grok-3-beta",
+      "context": "131K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.3-70b-instruct:free",
+      "context": "2K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/tencentarc/gfpgan",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/eleutherai/llemma_7b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/anthropic/claude-3-sonnet",
+      "context": "4K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00"
+    },
+    {
+      "model": "blackboxai/aion-labs/aion-1.0",
+      "context": "33K tokens",
+      "input_cost": "4.00",
+      "output_cost": "8.00"
+    },
+    {
+      "model": "blackboxai/baidu/ernie-4.5-300b-a47b",
+      "context": "12K tokens",
+      "input_cost": "0.28",
+      "output_cost": "1.10"
+    },
+    {
+      "model": "blackboxai/yorickvp/llava-13b",
+      "context": "0K tokens",
+      "input_cost": "NaN",
+      "output_cost": "NaN"
+    },
+    {
+      "model": "blackboxai/neversleep/llama-3.1-lumimaid-8b",
+      "context": "2K tokens",
+      "input_cost": "0.20",
+      "output_cost": "1.25"
+    },
+    {
+      "model": "blackboxai/mistralai/magistral-medium-2506",
+      "context": "40K tokens",
+      "input_cost": "2.00",
+      "output_cost": "5.00"
+    },
+    {
+      "model": "blackboxai/deepseek/deepseek-chat:free",
+      "context": "164K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00"
+    },
+    {
+      "model": "blackboxai/aetherwiing/mn-starcannon-12b",
+      "context": "4K tokens",
+      "input_cost": "0.80",
+      "output_cost": "1.20"
+    },
+    {
+      "model": "blackboxai/amazon/nova-lite-v1",
+      "context": "5K tokens",
+      "input_cost": "0.06",
+      "output_cost": "0.24"
+    },
+    {
+      "model": "blackboxai/openai/o1",
+      "context": "100K tokens",
+      "input_cost": "15.00",
+      "output_cost": "60.00"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+```diff
+--- a/main.py
++++ b/main.py
+@@ -84,7 +84,8 @@ class ChatRequest(BaseModel):
+ class ChatRequest(BaseModel):
+     prompt: str
+     model_type: Optional[str] = None
+     max_tokens: Optional[int] = 2048
+     temperature: Optional[float] = 0.7
++    analyze_directory: Optional[str] = None
+     metadata: Dict[str, Any] = Field(default_factory=dict)
+ 
+@@ -480,6 +481,50 @@ async def chat_with_tools(request: ToolChatRequest):
+             "description": "Available function calling tools for the AI assistant"
+         }
+ 
++async def analyze_directory_background(path: str = ".") -> dict:
++    """Analiza un directorio en segundo plano y devuelve información estructurada."""
++    try:
++        base_dir = os.environ.get("WRITE_ROOT", os.getcwd())
++        target_path = os.path.normpath(os.path.join(base_dir, path))
++        
++        # Verificar que la ruta existe y está dentro del directorio permitido
++        if not os.path.exists(target_path):
++            return {"error": f"La ruta {path} no existe"}
++            
++        if not os.path.abspath(target_path).startswith(os.path.abspath(base_dir)):
++            return {"error": "No se permite acceder a rutas fuera del directorio base"}
++        
++        if not os.path.isdir(target_path):
++            return {"error": f"{path} no es un directorio"}
++        
++        # Recopilar información del directorio
++        analysis = {
++            "path": path,
++            "absolute_path": target_path,
++            "files": [],
++            "directories": [],
++            "total_files": 0,
++            "total_directories": 0,
++            "total_size": 0
++        }
++        
++        # Analizar contenido
++        for item in os.listdir(target_path):
++            item_path = os.path.join(target_path, item)
++            if os.path.isfile(item_path):
++                size = os.path.getsize(item_path)
++                analysis["files"].append({
++                    "name": item,
++                    "size": size,
++                    "type": "file"
++                })
++                analysis["total_files"] += 1
++                analysis["total_size"] += size
++            elif os.path.isdir(item_path):
++                analysis["directories"].append({
++                    "name": item,
++                    "type": "directory"
++                })
++                analysis["total_directories"] += 1
++        
++        return analysis
++    except Exception as e:
++        return {"error": f"Error al analizar directorio: {str(e)}"}
++
+ @app.post("/chat", response_model=ChatResponse)
+ async def chat(request: ChatRequest):
+@@ -488,6 +533,15 @@ async def chat(request: ChatRequest):
+         if not orchestrator:
+             raise HTTPException(status_code=500, detail="Orquestador no inicializado")
+         
++        # Verificar si se solicitó análisis de directorio
++        if request.analyze_directory is not None:
++            directory_analysis = await analyze_directory_background(request.analyze_directory)
++            if "error" not in directory_analysis:
++                response_text = f"He analizado el directorio '{request.analyze_directory}'. Contiene {directory_analysis['total_files']} archivos y {directory_analysis['total_directories']} directorios."
++                return ChatResponse(response=response_text, model_used="directory-analyzer", status="success")
++            else:
++                return ChatResponse(response=directory_analysis["error"], model_used="directory-analyzer", status="error")
++        
+         # Detectar si es un comando especial
+         prompt = request.prompt.strip()
+```

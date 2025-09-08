@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "console_title": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "powerline",
+          "foreground": "#FFFFFF",
+          "background": "#7C3AED",
+          "properties": {
+            "text": " CHISPART "
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "foreground": "#111827",
+          "background": "#34D399",
+          "properties": {
+            "style": "folder",
+            "max_depth": 3,
+            "home_icon": "~",
+            "folder_separator_icon": "/",
+            "enable_hyperlink": false
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "foreground": "#111827",
+          "background": "#F59E0B",
+          "properties": {
+            "branch_icon": " ",
+            "display_status": true,
+            "display_staged": true,
+            "display_stash_count": true,
+            "display_upstream_icon": true,
+            "fetch_status": false,
+            "template": " {{ .HEAD }}{{ if .Working.Changed }} ✚{{ end }}{{ if .Staging.Changed }} ●{{ end }}{{ if .Ahead }} ⇡{{ end }}{{ if .Behind }} ⇣{{ end }}"
+          }
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#9CA3AF",
+          "properties": {
+            "time_format": "15:04"
+          }
+        }
+      ]
+    }
+  ],
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#7C3AED",
+    "template": "❯ "
+  },
+  "secondary_prompt": {
+    "background": "transparent",
+    "foreground": "#7C3AED",
+    "template": "❯❯ "
+  }
+}
+

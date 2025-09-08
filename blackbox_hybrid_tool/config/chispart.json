@@ -1,0 +1,66 @@
+{
+  "default_model": "auto",
+  "models": {
+    "blackbox": {
+      "enabled": true,
+      "model": "blackboxai/openai/o1",
+      "base_url": "https://api.blackbox.ai/chat/completions"
+    }
+  },
+  "chispart": {
+    "brand_color": "#f472b6",
+    "brand_color_dark": "#db2777",
+    "accent_color": "#67e8f9",
+    "brand_name": "Chispart AI",
+    "brand_tagline": "Plataforma de IA multiagente para creación",
+    "brand_emoji": "✨",
+    "theme": "glassmorphism-dark"
+  },
+  "testing": {
+    "default_language": "python",
+    "test_frameworks": {
+      "python": "pytest",
+      "javascript": "jest",
+      "java": "junit",
+      "go": "testing"
+    },
+    "coverage_threshold": 80.0
+  },
+  "available_models": [
+    {
+      "model": "blackboxai/anthropic/claude-3.7-sonnet",
+      "context": "64K tokens",
+      "input_cost": "3.00",
+      "output_cost": "15.00",
+      "category": "reasoning"
+    },
+    {
+      "model": "blackboxai/openai/o1",
+      "context": "100K tokens",
+      "input_cost": "15.00",
+      "output_cost": "60.00",
+      "category": "premium"
+    },
+    {
+      "model": "blackboxai/openai/o1-mini-2024-09-12",
+      "context": "66K tokens",
+      "input_cost": "1.10",
+      "output_cost": "4.40",
+      "category": "fast"
+    },
+    {
+      "model": "blackboxai/meta-llama/llama-3.1-8b-instruct",
+      "context": "131K tokens",
+      "input_cost": "0.02",
+      "output_cost": "0.02",
+      "category": "efficient"
+    },
+    {
+      "model": "blackboxai/google/gemma-2-9b-it:free",
+      "context": "8K tokens",
+      "input_cost": "0.00",
+      "output_cost": "0.00",
+      "category": "free"
+    }
+  ]
+}

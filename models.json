@@ -1,0 +1,10 @@
+{
+  "default_model": "auto",
+  "models": {
+    "blackbox": {
+      "model": "blackboxai/openai/o1",
+      "enabled": true,
+      "base_url": "https://api.blackbox.ai/chat/completions"
+    }
+  }
+}
